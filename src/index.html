@@ -1,17 +1,19 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Goit-js-hw-10</title>
-  </head>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../node_modules/basiclightbox/dist/basicLightbox.min.css">
-    <script type="module" src="./index.js"></script>
-  </head>
-  <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <div class="container">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Components js</title>
+		<link rel="stylesheet" href="style.css" />
+		<script type="module" src="./index.js"></script>
+		<script type="module" src="./select.js"></script>
+		<script type="module" src="./input.js"></script>
+	</head>
+	<body>
+		<!-- ❗️❗️❗️ Add partials like so for every page -->
+		<!-- <div class="container">
       <div class="selectEl">
         <select id="selectElement">
         </select>
@@ -24,7 +26,38 @@
         <span class="loader_cat is-hidden"></span>
       </div>
       <div class="cat-container"></div>
-      </div>
-    </div>   
-  </body>
+    </div>  -->
+		<div class="box__select">
+			<div class="custom__select">Pancakes</div>
+			<div class="menu__box">
+				<ul class="menu__select">
+					<li class="menu__item">Cabbage</li>
+					<li class="menu__item">Cucumber</li>
+					<li class="menu__item">Tomato</li>
+					<li class="menu__item">Corn</li>
+					<li class="menu__item">Radish</li>
+					<li class="menu__item">Parsley</li>
+					<li class="menu__item">Cabbage</li>
+					<li class="menu__item">Cucumber</li>
+					<li class="menu__item">Tomato</li>
+					<li class="menu__item">Corn</li>
+					<li class="menu__item">Radish</li>
+					<li class="menu__item">Parsley</li>
+				</ul>
+			</div>
+		</div>
+		<ul class="buttons"></ul>
+		<div class="search">
+			<div class="input_container">
+				<input
+					type="text"
+					class="input_search js-search"
+					placeholder="Тут может быть ваша реклама!"
+				/>
+			</div>
+			<div class="input_container">
+				<button class="button_alarm" type="submit">Alarm</button>
+			</div>
+		</div>
+	</body>
 </html>
