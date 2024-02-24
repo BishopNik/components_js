@@ -322,3 +322,31 @@ body {
   box-shadow: 6px 5px 5px 0px rgba(0,0,0,0.75);
   font-size: 24px;
 } */
+
+/* Pagination */
+.tui-pagination {
+	display: flex;
+	gap: 15px;
+	justify-content: center;
+	align-items: center;
+	margin-top: 100px;
+}
+
+.tui-page-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30px;
+	height: 30px;
+	padding: 15px;
+	border: 1px solid black;
+	border-radius: 50%;
+	background-color: antiquewhite;
+	font-size: 22px;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+.tui-is-selected {
+	background-color: blueviolet;
+}
