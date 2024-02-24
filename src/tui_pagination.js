@@ -9,4 +9,10 @@ const pagination = new Pagination(document.getElementById('tui-pagination-contai
 	centerAlign: true,
 });
 
-console.log(pagination.getCurrentPage());
+document.addEventListener('click', onClick);
+
+function onClick(e) {
+	if (e.target && e.target.classList.contains('tui-page-btn')) {
+		console.log(pagination.getCurrentPage());
+	}
+}
