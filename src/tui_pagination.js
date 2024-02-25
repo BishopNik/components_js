@@ -5,7 +5,7 @@ import Pagination from 'tui-pagination';
 let page = 1;
 const box_array = [];
 let view_box_array = [];
-const card_view = 5;
+const card_view = window.innerWidth > 375 ? 3 : 4;
 const btn = window.innerWidth > 375 ? 3 : 2;
 
 const tui_container = document.querySelector('.tui-container');
