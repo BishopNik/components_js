@@ -12,7 +12,7 @@ const textPhrase = [
 let reklamaOn = true;
 
 const markupPage = `<div class="input_container" style="text-align: center; margin-top: 100px;">
-        <input type="text" class="input_search js-search" style="display: inline-block; width: 550px; padding: 20px 30px; font-size: 24px;" placeholder="Тут может быть ваша реклама!">
+        <input type="text" class="input_search js-search" style="display: inline-block; width: 550px; padding: 20px 30px; font-size: 24px; border-radius: 12px; border: 0.5px solid rgba(0,0,0,0.5);" placeholder="Тут может быть ваша реклама!">
     </div>
     <div class="input_container" style="text-align: center; margin-top: 100px;">
       <button class="button_alarm" type="submit" style="width: 300px; height: 100px; cursor: pointer; border: 1px solid #000000; border-radius: 8px; box-shadow: 6px 5px 5px 0px rgba(0,0,0,0.75); font-size: 24px;" >Alarm</button>

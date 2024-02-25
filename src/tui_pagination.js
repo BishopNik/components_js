@@ -2,18 +2,32 @@
 
 import Pagination from 'tui-pagination';
 
-const pagination = new Pagination(document.getElementById('tui-pagination-container'), {
-	totalItems: 500,
-	itemsPerPage: 7,
-	visiblePages: 5,
+let page = 1;
+const box_array = [];
+let view_box_array = [];
+const card_view = 5;
+const btn = window.innerWidth > 375 ? 3 : 2;
+
+const tui_container = document.querySelector('.tui-container');
+const tui_pagination = document.getElementById('tui-pagination-container');
+const pagination = new Pagination(tui_pagination, {
+	totalItems: 100,
+	itemsPerPage: card_view,
+	visiblePages: btn,
 	centerAlign: true,
 });
 
-document.addEventListener('click', onClick);
+Array.from({ length: 100 }, (_, index) =>
+	box_array.push(`<div class="box">Item_${index + 1}</div>`)
+);
 
-function onClick(e) {
-	if (e.target && e.target.classList.contains('tui-page-btn')) {
-		console.log(pagination.getCurrentPage());
-		pagination.movePageTo(10);
-	}
-}
+//First run
+view_box_array = box_array.slice(0, 3);
+tui_container.innerHTML = view_box_array.join('');
+
+//Paganation
+pagination.on('afterMove', event => {
+	page = event.page;
+	view_box_array = box_array.slice((page - 1) * card_view, card_view * page);
+	tui_container.innerHTML = view_box_array.join('');
+});
