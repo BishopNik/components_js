@@ -330,6 +330,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	margin-top: 50px;
+	margin-bottom: 100px;
 }
 
 .tui-page-btn {
@@ -345,6 +346,11 @@ body {
 	font-size: 22px;
 	font-weight: 500;
 	text-decoration: none;
+	cursor: pointer;
+}
+
+.tui-is-disabled {
+	cursor: default;
 }
 
 .tui-is-selected {
@@ -359,6 +365,7 @@ body {
 	flex-wrap: wrap;
 	list-style: none;
 	margin-top: 70px;
+	margin-bottom: 70px;
 }
 
 .box {
@@ -368,10 +375,47 @@ body {
 	width: 70px;
 	height: 50px;
 	margin: 15px;
-	padding: 20px;
+	padding: 10px 24px;
 	border: 1px solid black;
 	border-radius: 15px;
 	font-size: 24px;
 	font-weight: 500;
 	list-style: none;
+}
+
+.btn_container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 100px;
+	margin: 100px;
+}
+
+.btn_item_add,
+.btn_item_del,
+.item_pag {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 150px;
+	height: 60px;
+	font-size: 18px;
+	font-weight: 500;
+	border: 1px solid black;
+	border-radius: 6px;
+	background-color: antiquewhite;
+	box-shadow: 2px 2px 2px 2px gray;
+	cursor: pointer;
+}
+
+.btn_item_add:hover,
+.btn_item_del:hover {
+	background-color: orange;
+	color: red;
+}
+
+.item_pag {
+	font-size: 24px;
+	font-weight: 600;
+	color: blueviolet;
 }
